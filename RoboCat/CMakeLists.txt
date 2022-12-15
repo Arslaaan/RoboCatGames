@@ -3,6 +3,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(RoboCatShared VERSION 1.0.1 DESCRIPTION "Common library for RoboCatAction game")
 
+find_package(SDL2 REQUIRED)
+
 add_library(${PROJECT_NAME} SHARED
         Src/Engine.cpp
         Src/GameObject.cpp

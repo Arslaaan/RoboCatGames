@@ -19,7 +19,7 @@ Engine::Engine() :
     ScoreBoardManager::StaticInit();
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) != 0) {
-        LOG(SDL_GetError())
+        LOG("SDL initialization get error: %s", SDL_GetError())
     }
 }
 
