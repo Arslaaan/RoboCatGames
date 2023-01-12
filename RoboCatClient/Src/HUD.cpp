@@ -12,7 +12,7 @@ mHealthOffset( 1000, 10.f, 0.0f ),
 mHealth( 0 )
 {
 	TTF_Init();
-	mFont = TTF_OpenFont( "../Assets/Carlito-Regular.TTF", 36 );
+	mFont = TTF_OpenFont( "../../Assets/Carlito-Regular.TTF", 36 );
 	if( mFont == nullptr )
 	{
 		SDL_LogError( SDL_LOG_CATEGORY_ERROR, "Failed to load font." );

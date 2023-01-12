@@ -7,7 +7,7 @@ include_directories(
         Inc
 )
 
-find_package(SDL2 REQUIRED CONFIG COMPONENTS SDL2main)
+find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 find_package(SDL2_ttf REQUIRED)
 

@@ -39,7 +39,7 @@ include_directories(
 file(GLOB_RECURSE PUBLIC_HEADER_FILES "Inc/*.h*")
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${PUBLIC_HEADER_FILES}")
 
-target_include_directories(${PROJECT_NAME} PRIVATE Inc)
+target_include_directories(${PROJECT_NAME} PUBLIC Inc)
 target_include_directories(${PROJECT_NAME} PRIVATE Src)
 
 target_link_libraries(
